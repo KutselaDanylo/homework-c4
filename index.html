@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Gallery</title>
 </head>
 <body>
+  <ul class="js-gallery"></ul>
 
-    <script src="homework 1.js" type="module"></script>
+  <div class="lightbox js-lightbox" style="display: none;">
+    <div class="lightbox__overlay" style="position: fixed; top: 0; left: 0; width:100%; height:100%; background: rgba(0,0,0,0.8);"></div>
+    <div class="lightbox__content" style="position: fixed; top:50%; left:50%; transform: translate(-50%, -50%); color: white; font-size: 32px; text-align: center; max-width:80vw;">
+      <p class="lightbox__text"></p>
+    </div>
+    <button type="button" class="lightbox__button" data-action="close-lightbox" style="position: fixed; top: 20px; right: 20px; font-size: 24px;">✕</button>
+  </div>
+<script src="homework 1.js" type="module"></script>
 </body>
 </html>
+
+
